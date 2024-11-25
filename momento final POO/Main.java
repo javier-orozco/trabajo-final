@@ -7,7 +7,7 @@ public class Main {
             Ascensor ascensor = new Ascensor();
             SistemaControl sistema = new SistemaControl(ascensor);
 
-            // llamar ascensor
+            // Llamar al ascensor
             System.out.print("Ingrese el piso desde donde llama el ascensor (1-5): ");
             int pisoLlamada = scanner.nextInt();
             while (pisoLlamada < 1 || pisoLlamada > 5) {
@@ -32,11 +32,11 @@ public class Main {
             // Mover al destino
             ascensor.moverA(pisoDestino);
 
-            // puertas cerrando al llegar al destino
-            ascensor.cerrarPuertas(); 
+            // Cerrando puertas al llegar al destino
+            ascensor.cerrar(); 
 
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-}
+}}

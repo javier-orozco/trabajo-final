@@ -13,7 +13,7 @@ public class Boton {
     public void reset() {
         presionado = false;
     }
-    
+
     public boolean isPresionado() {
         return presionado;
     }
